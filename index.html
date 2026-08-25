@@ -90,7 +90,7 @@
         .btn {
             display: inline-block;
             padding: 12px 24px;
-            margin: 8px;
+            margin: 8px 0 0 0;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
@@ -186,11 +186,35 @@
             border-radius: 8px;
             margin-bottom: 15px;
         }
+        .project-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .project-card img:hover {
+             transform: scale(1.03);
+        }
         .tools {
             font-weight: bold;
             color: #2563eb !important;
         }
+        .project-card .primary-btn {
+            margin-top: 5px;
+        }
+        .project-card h4 {
+            margin-bottom: 10px;
+            color: #111827;
+            font-size: 18px;
+        }
 
+        .project-card ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+            color: #4b5563;
+        }
+
+        .project-card li {
+            margin-bottom: 6px;
+        }
         /* Contact */
         .contact {
             text-align: center;
@@ -357,8 +381,16 @@
             <!-- Project 1 -->
             <div class="project-card">
 
-                <h3>E-Commerce Sales Analysis</h3>
-                <img src="ecommerce-sales-chart.png" alt="E-Commerce Sales Analysis Chart">
+            <h3>E-Commerce Sales Analysis</h3>
+             <a
+                 href="https://github.com/Dhyaneshwaran08/ecommerce-sales-analysis"
+                 target="_blank"
+             >
+                <img
+                src="ecommerce-sales-chart.png"
+                alt="E-Commerce Sales Analysis Chart"
+            >
+        </a>
                 <p>
                     Analyzed e-commerce sales data using Python, Pandas, Matplotlib and Seaborn to identify sales trends, product performance and regional patterns.
                 </p>
@@ -370,8 +402,14 @@
                 <p>
                     Performed data cleaning, exploratory data analysis and visualization to generate meaningful business insights.
                 </p>
+                <h4>Key Highlights</h4>
 
-                <!-- CHANGE THIS LINK -->
+                <ul>
+                    <li>Month-wise sales analysis</li>
+                    <li>Subcategory-wise sales analysis</li>
+                    <li>Region-wise sales analysis</li>
+                    <li>Data visualization and business insights</li>
+                </ul>        
                 <a
                     href="https://github.com/Dhyaneshwaran08/ecommerce-sales-analysis"
                     target="_blank"
