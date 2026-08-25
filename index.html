@@ -147,7 +147,13 @@
             box-shadow: 0 3px 10px rgba(0,0,0,0.08);
             font-weight: bold;
         }
+        .skill {
+            transition: transform 0.3s ease;
+        }
 
+        .skill:hover {
+            transform: translateY(-5px);
+        }
         /* Projects */
         .projects-container {
             display: flex;
@@ -229,7 +235,10 @@
             color: #2563eb;
             text-decoration: none;
         }
-
+        .contact a:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
         /* Footer */
         footer {
             background: #111827;
@@ -237,7 +246,14 @@
             text-align: center;
             padding: 20px;
         }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
 
+        footer a:hover {
+            color: #60a5fa;
+        }
         /* Mobile */
         @media (max-width: 768px) {
 
@@ -262,6 +278,20 @@
             .project-card {
                 width: 100%;
             }
+            .hero p {
+                font-size: 16px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 220px;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -279,6 +309,11 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="Dhyaneshwaran_Data Analyst_Resume.pdf" download>
+                    Resume
+                </a>
+            </li>
         </ul>
 
     </nav>
@@ -308,7 +343,13 @@
                 <a href="#contact" class="btn secondary-btn">
                     Contact Me
                 </a>
-
+                <a
+                    href="Dhyaneshwaran_Data Analyst_Resume.pdf"
+                    download
+                    class="btn secondary-btn"
+                >
+                    Download Resume
+                </a>
             </div>
 
         </div>
@@ -322,27 +363,28 @@
         <h2 class="section-title">About Me</h2>
 
         <div class="about">
-
             <p>
-                I am a B.Com E-Commerce graduate with an interest in
-                Data Analytics and Business Intelligence.
+                I am a B.Com E-Commerce graduate and aspiring Data Analyst
+                with a strong interest in data analytics and business intelligence.
             </p>
 
             <br>
 
             <p>
-                I am developing my skills in Python, SQL, Excel and
-                Power BI, with a focus on data cleaning, exploratory
-                data analysis, visualization and dashboard development.
+                I have hands-on experience with Python, Pandas, NumPy, SQL,
+                Excel, Power BI, Matplotlib and Seaborn. I am focused on
+                data cleaning, exploratory data analysis, data visualization
+                and dashboard development.
             </p>
 
             <br>
 
             <p>
-                I enjoy working with data to identify patterns,
-                trends and insights that can support better
-                business decisions.
+                I enjoy transforming raw data into meaningful insights that
+                can help businesses understand trends, identify opportunities
+                and make better decisions.
             </p>
+           
 
         </div>
 
@@ -364,6 +406,11 @@
             <div class="skill">SQL</div>
             <div class="skill">Power BI</div>
             <div class="skill">Excel</div>
+            <div class="skill">Data Cleaning</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">EDA</div>
+
+</div>
 
         </div>
 
@@ -391,8 +438,9 @@
                 alt="E-Commerce Sales Analysis Chart"
             >
         </a>
-                <p>
-                    Analyzed e-commerce sales data using Python, Pandas, Matplotlib and Seaborn to identify sales trends, product performance and regional patterns.
+               <p>
+                    Analyzed e-commerce sales data using Python to identify
+                    sales trends, subcategory performance and regional patterns.
                 </p>
 
                 <p class="tools">
@@ -465,14 +513,29 @@
     </section>
 
 
-    <!-- Footer -->
     <footer>
 
-        <p>
-            © 2026 Dhyanesh Waran | Data Analyst Portfolio
-        </p>
+    <p>
+        © 2026 Dhyanesh Waran | Data Analyst Portfolio
+    </p>
 
-    </footer>
+    <p>
+        <a
+            href="https://github.com/Dhyaneshwaran08"
+            target="_blank"
+        >
+            GitHub
+        </a>
+        |
+        <a
+            href="https://linkedin.com/in/dhyanesh-waran"
+            target="_blank"
+        >
+            LinkedIn
+        </a>
+    </p>
+
+</footer>
 
 </body>
 </html>
