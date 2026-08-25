@@ -1,20 +1,437 @@
-<section>
-    <h2>My Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div>
-        <h3>E-Commerce Sales Analysis</h3>
+    <title>Dhyaneshwaran N | Data Analyst</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #1f2937;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #4b5563;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary-btn {
+            background: #2563eb;
+            color: white;
+        }
+
+        .secondary-btn {
+            background: white;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        /* Common Section */
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #111827;
+        }
+
+        /* About */
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+            color: #4b5563;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 23px;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .project-card p {
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+
+        .tools {
+            font-weight: bold;
+            color: #2563eb !important;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+            color: #4b5563;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <h2>Dhyanesh Waran</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div>
+
+            <h1>Hi, I'm Dhyanesh Waran</h1>
+
+            <h2>Data Analyst</h2>
+
+            <p>
+                B.Com E-Commerce graduate passionate about Data Analytics,
+                data visualization and turning raw data into meaningful
+                business insights.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a B.Com E-Commerce graduate with an interest in
+                Data Analytics and Business Intelligence.
+            </p>
+
+            <br>
+
+            <p>
+                I am developing my skills in Python, SQL, Excel and
+                Power BI, with a focus on data cleaning, exploratory
+                data analysis, visualization and dashboard development.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy working with data to identify patterns,
+                trends and insights that can support better
+                business decisions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Python</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">NumPy</div>
+            <div class="skill">Matplotlib</div>
+            <div class="skill">Seaborn</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Excel</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-container">
+
+
+            <!-- Project 1 -->
+            <div class="project-card">
+
+                <h3>E-Commerce Sales Analysis</h3>
+
+                <p>
+                    Analyzed e-commerce sales data using Python to
+                    identify sales trends, product performance and
+                    business insights.
+                </p>
+
+                <p class="tools">
+                    Python | Pandas | Matplotlib | Seaborn
+                </p>
+
+                <p>
+                    The project includes data cleaning,
+                    exploratory data analysis and data visualization.
+                </p>
+
+                <!-- CHANGE THIS LINK -->
+                <a
+                    href="https://github.com/Dhyaneshwaran08/ecommerce-sales-analysis"
+                    target="_blank"
+                    class="btn primary-btn"
+                >
+                    View Project
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact">
+
+            <p>
+                Email:
+                <a href="mailto:dhyaneshwaran86@gmail.com">
+                    dhyaneshwaran86@gmail.com
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a
+                    href="https://linkedin.com/in/dhyanesh-waran"
+                    target="_blank"
+                >
+                    LinkedIn Profile
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a
+                    href="https://github.com/Dhyaneshwaran08"
+                    target="_blank"
+                >
+                    GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
 
         <p>
-            Analyzed e-commerce sales data using Python
-            to identify sales trends and business insights.
+            © 2026 Dhyanesh Waran | Data Analyst Portfolio
         </p>
 
-        <p>
-            Tools: Python, Pandas, Matplotlib, Seaborn
-        </p>
+    </footer>
 
-        <a href="https://github.com/Dhyaneshwaran08/ecommerce-sales-analysis">
-            View Project
-        </a>
-    </div>
-</section>
+</body>
+</html>
